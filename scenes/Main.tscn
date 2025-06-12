@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://bvxvq8nix6y0v"]
+
+[ext_resource type="Script" uid="uid://b8nm1ovtekxom" path="res://scripts/GameManager.gd" id="1_0hdqg"]
+[ext_resource type="PackedScene" uid="uid://b4xvq8nix6y1w" path="res://scenes/GameScene.tscn" id="2_1mjkl"]
+[ext_resource type="Script" uid="uid://ccupwvcdv10l8" path="res://scripts/VoiceRecorder.gd" id="4_voice"]
+[ext_resource type="Script" uid="uid://cfj243yncswvg" path="res://scripts/AnswerEvaluator.gd" id="5_eval"]
+[ext_resource type="PackedScene" uid="uid://c5xvq8nix6y2x" path="res://scenes/UI/MainUI.tscn" id="6_ui_scene"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_0hdqg")
+
+[node name="GameScene" parent="." instance=ExtResource("2_1mjkl")]
+
+[node name="UI" parent="." instance=ExtResource("6_ui_scene")]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VoiceRecorder" type="Node" parent="."]
+script = ExtResource("4_voice")
+
+[node name="AnswerEvaluator" type="Node" parent="."]
+script = ExtResource("5_eval")
