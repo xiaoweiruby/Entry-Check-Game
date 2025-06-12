@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5xvq8nix6y2x"]
+[gd_scene load_steps=5 format=3 uid="uid://c5xvq8nix6y2x"]
 
 [ext_resource type="Script" path="res://scripts/MainUI.gd" id="1_0hdqg"]
 [ext_resource type="Texture2D" path="res://机场素材/游戏入场画面1.png" id="2_1mjkl"]
 [ext_resource type="Texture2D" path="res://机场素材/游戏通关画面2.png" id="3_2nklm"]
+[ext_resource type="FontFile" uid="uid://dxn7w8qjbyx0v" path="res://VonwaonBitmap-16pxLite.ttf" id="4_font"]
 
 [node name="MainUI" type="Control"]
 layout_mode = 3
@@ -36,6 +37,7 @@ offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
+theme_override_fonts/font = ExtResource("4_font")
 text = "入境检查练习"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -54,6 +56,7 @@ offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 18
+theme_override_fonts/font = ExtResource("4_font")
 text = "通过语音回答海关问题，练习英语口语"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -73,6 +76,7 @@ offset_bottom = 100.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("4_font")
 text = "开始游戏"
 
 [node name="GameScreen" type="Control" parent="."]
@@ -150,6 +154,7 @@ offset_top = 20.0
 offset_right = -20.0
 offset_bottom = -20.0
 theme_override_font_sizes/font_size = 18
+theme_override_fonts/font = ExtResource("4_font")
 text = "✅ 回答正确！"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -181,6 +186,7 @@ offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
+theme_override_fonts/font = ExtResource("4_font")
 text = "🎉 通关成功！"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -199,6 +205,7 @@ offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 18
+theme_override_fonts/font = ExtResource("4_font")
 text = "恭喜您成功通过入境检查！\n您的英语口语表现优秀！"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -218,6 +225,7 @@ offset_bottom = 100.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("4_font")
 text = "再次挑战"
 
 [node name="FailureScreen" type="Control" parent="."]
@@ -249,6 +257,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
 theme_override_colors/font_color = Color(1, 0.3, 0.3, 1)
+theme_override_fonts/font = ExtResource("4_font")
 text = "❌ 检查失败"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -268,6 +277,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 18
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_font")
 text = "很遗憾，您的回答不够准确。\n请继续练习，提高英语口语水平！"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -287,4 +297,5 @@ offset_bottom = 100.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("4_font")
 text = "重新开始"
